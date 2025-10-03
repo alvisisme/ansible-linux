@@ -1,3 +1,0 @@
-- job_name: "alertmanager"
-  static_configs:
-      - targets: ["{{ ansible_host }}:9093"]

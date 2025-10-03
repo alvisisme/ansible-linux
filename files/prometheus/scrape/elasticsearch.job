@@ -1,3 +1,0 @@
-- job_name: "elasticsearch"
-  file_sd_configs:
-    - files: [ "/etc/prometheus/file_sd/elasticsearch.yml" ]

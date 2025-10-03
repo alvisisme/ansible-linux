@@ -1,4 +1,0 @@
-- job_name: "nacos"
-  metrics_path: /nacos/actuator/prometheus
-  file_sd_configs:
-    - files: [ "/etc/prometheus/file_sd/nacos.yml" ]

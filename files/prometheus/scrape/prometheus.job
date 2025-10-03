@@ -1,6 +1,0 @@
-- job_name: "prometheus"
-  metrics_path: /metrics
-  static_configs:
-    - targets: [ "{{ ansible_host }}:9090" ]
-      labels:
-        all: prometheus-server

@@ -1,3 +1,0 @@
-- job_name: "blackbox"
-  static_configs:
-      - targets: ["{{ ansible_host }}:9115"]

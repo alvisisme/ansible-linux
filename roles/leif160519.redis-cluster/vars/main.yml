@@ -1,2 +1,0 @@
----
-redis_url: http://download.redis.io/releases/{{ redis_version }}.tar.gz

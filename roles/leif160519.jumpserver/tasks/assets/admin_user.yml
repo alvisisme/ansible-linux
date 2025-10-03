@@ -1,3 +1,0 @@
----
-- set_fact:
-    admin_user: "{{ assets.users.root }}"

@@ -1,3 +1,0 @@
-- job_name: "clickhouse"
-  file_sd_configs:
-    - files: [ "/etc/prometheus/file_sd/clickhouse.yml" ]

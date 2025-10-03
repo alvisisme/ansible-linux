@@ -1,6 +1,0 @@
----
-- name: pkg - Install package
-  tags: [ install ]
-  package:
-    name: monit
-    state: latest

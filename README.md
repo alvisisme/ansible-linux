@@ -108,19 +108,6 @@ ssh_args = -o ProxyCommand="nc -X connect -x 127.0.0.1:3128 %h %p"
 # all machine(prometheus.yml auto install node_exporter)
 ansible-playbook -u root -i inventory/ playbooks/universal.yml
 
-# prometheus-server(以下顺序不能颠倒)
-# 1.pull submodle
-git submodule update --init --recursive
-# 2.install prometheus
-ansible-playbool -u root -i inventory/ playbooks/prometheus.yml -t prometheus
-# 3.install alertmanager
-ansible-playbook -u root -i inventory/ playbooks/prometheus.yml -t alertmanager
-# 4.install blackbox_exporter
-ansible-playbook -u root -i inventory/ playbooks/prometheus.yml -t blackbox
-# 5.config prometheus and start prometheus service
-ansible-playbook -u root -i inventory/ playbooks/prometheus.yml -t admin
-```
-
 ## 五、特定情况
 - 1.安装某些软件
 ```
